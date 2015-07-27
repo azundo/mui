@@ -86,6 +86,7 @@ function activateTab(toggleEl) {
 
 /** Define module API */
 module.exports = {
+  initialize: initialize,
   /** Initialize module listeners */
   initListeners: function() {
     // markup elements available when method is called

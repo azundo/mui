@@ -6,6 +6,7 @@
 // jscs:disable validateQuoteMarks
 
 'use strict';
+import React from 'react';
 
 var util = require('../js/lib/util.js');
 

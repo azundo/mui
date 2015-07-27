@@ -96,6 +96,7 @@ function toggleDropdown(toggleEl) {
   
 /** Define module API */
 module.exports = {
+  initialize: initialize,
   /** Initialize module listeners */
   initListeners: function() {
     var doc = document;

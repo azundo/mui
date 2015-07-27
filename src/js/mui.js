@@ -28,6 +28,13 @@
   
   // init libraries
   jqLite.ready(function() {
+    // check for animationstart support.
+    var animationStartSupport = function (e) {
+      win._muiAnimationStartSupport = true;
+    };
+    jqLite.one(win.document, 'animationstart', animationStartSupport);
+    jqLite.one(win.document, 'webkitAnimationStart', animationStartSupport);
+    jqLite.one(win.document, 'webkitAnimationStart', animationStartSupport);
     formControl.initListeners();
     select.initListeners();
     ripple.initListeners();
