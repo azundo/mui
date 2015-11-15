@@ -229,7 +229,9 @@ Menu.prototype._createMenuEl = function(selectEl) {
   idealTop = -1 * idealTop;
 
   // minimum position
-  minTop = -1 * selectEl.getBoundingClientRect().top;
+  // TRACKAPP add a 42px offset here due to the hovered app bar that obscures
+  // 42 px of space
+  minTop = -1 * selectEl.getBoundingClientRect().top + 42;
 
   // maximium position
   maxTop = (viewHeight - height) + minTop;
