@@ -2,11 +2,17 @@
  * MUI Tabs module
  */
 
+.mui-tab-wrapper {
+    margin-left: $grid-gutter-width / 2 * -1;
+    margin-right: $grid-gutter-width / 2 * -1;
+}
+
 .mui-tabs {
+  box-shadow: 0 3px 15px 0px rgba(0, 0, 0, 0.4);
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
-  background-color: transparent;
+  background-color: $mui-tab-background-color;
   white-space: nowrap;
   
   > li {

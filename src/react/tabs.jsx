@@ -106,9 +106,11 @@ var TabHeaders = React.createClass({
       );
     }.bind(this));
     return (
-      <ul className={ classes }>
-        { items }
-      </ul>
+      <div className='mui-tab-wrapper'>
+        <ul className={ classes }>
+          { items }
+        </ul>
+      </div>
     );
   }
 });
